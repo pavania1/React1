@@ -34,6 +34,10 @@ import User from './components/User'
 import Counterone from './components/Counterone';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
+import PutForm from './components/PutForm';
+import DeleteForm from './components/DeleteForm';
 
 function App() {
   return (
@@ -89,9 +93,13 @@ function App() {
         <HoverCounterTwo count={count} incrementCount={incrementCount} />
       )}
      /> */}
-     <UserProvider value="pavaniii">
+     {/* <UserProvider value="pavaniii">
       <ComponentC></ComponentC>
      </UserProvider>
+     <PostList></PostList> */}
+     <PostForm></PostForm>
+     <PutForm></PutForm>
+     <DeleteForm></DeleteForm>
     </div>
   );
 }
